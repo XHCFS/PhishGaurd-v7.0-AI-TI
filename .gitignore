@@ -1,0 +1,120 @@
+# -------------------------------------------------------------
+# Go build and binary artifacts
+# -------------------------------------------------------------
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Go vendor and cache
+/vendor/
+/bin/
+/build/
+/dist/
+/tmp/
+*.log
+
+# Go modules (keep go.sum — needed for reproducibility)
+# Uncomment the next line ONLY if you intentionally want to regenerate deps
+# go.sum
+
+# -------------------------------------------------------------
+# Dependency / package managers
+# -------------------------------------------------------------
+node_modules/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+
+# -------------------------------------------------------------
+# Configuration and secrets
+# -------------------------------------------------------------
+*.env
+.env.*
+config.local.yaml
+configs/*.local.yaml
+configs/*.secret.yaml
+credentials.json
+secrets.json
+.envrc
+
+# -------------------------------------------------------------
+# IDE / Editor files
+# -------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*~
+.DS_Store
+Thumbs.db
+
+# -------------------------------------------------------------
+# Machine learning / data artifacts
+# -------------------------------------------------------------
+*.h5
+*.ckpt
+*.pth
+*.pt
+*.onnx
+*.tflite
+*.model
+*.weights
+*.pkl
+*.joblib
+mlruns/
+ml_data/
+notebooks/.ipynb_checkpoints/
+notebooks/__pycache__/
+
+# -------------------------------------------------------------
+# Testing / Coverage / Logs
+# -------------------------------------------------------------
+coverage.out
+*.cov
+*.coverprofile
+*.prof
+*.profile
+test-results/
+test-output/
+*.tmp
+*.log
+*.trace
+
+# -------------------------------------------------------------
+# Docker / Deployment
+# -------------------------------------------------------------
+*.pid
+*.sock
+*.db
+*.sqlite
+*.tar
+*.gz
+*.tgz
+*.zip
+*.bak
+*.old
+
+# Docker build cache
+**/.dockerignore
+**/Dockerfile~
+**/docker-compose.override.yml
+**/docker-compose.dev.yml
+
+# -------------------------------------------------------------
+# System-specific
+# -------------------------------------------------------------
+*.lock
+*.DS_Store
+*.lnk
+desktop.ini
